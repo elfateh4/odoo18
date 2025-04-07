@@ -1,0 +1,15 @@
+2025-04-07 00:04:12,321 1 INFO ? odoo: Odoo version 18.0-20250401 
+2025-04-07 00:04:12,321 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-04-07 00:04:12,321 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/addons/18.0', '/mnt/extra-addons'] 
+2025-04-07 00:04:12,321 1 INFO ? odoo: database: odoo@db:5432 
+2025-04-07 00:04:12,473 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-04-07 00:04:12,482 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2025-04-07 00:04:12,647 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on a1022277c496:8069 
+2025-04-07 00:04:19,158 1 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-04-07 00:04:19,164 1 INFO ? odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-04-07 00:04:19,210 1 INFO ? odoo.modules.loading: loading 105 modules... 
+2025-04-07 00:04:20,043 1 INFO ? odoo.modules.loading: 105 modules loaded in 0.83s, 0 queries (+0 extra) 
+2025-04-07 00:04:20,234 1 INFO ? odoo.modules.loading: Modules loaded. 
+2025-04-07 00:04:20,239 1 INFO ? odoo.modules.registry: Registry loaded in 1.101s 
+2025-04-07 00:04:20,242 1 INFO odoo18_hult odoo.addons.base.models.ir_http: Generating routing map for key 1 
+2025-04-07 00:04:20,806 1 INFO odoo18_hult werkzeug: 172.20.0.1 - - [07/Apr/2025 00:04:20] "GET / HTTP/1.0" 200 - 178 0.088 1.591

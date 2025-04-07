@@ -1,0 +1,40 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres:15
+    container_name: odoo18_hult_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: odoo
+      POSTGRES_PASSWORD: odoo
+    volumes:
+      - type: volume
+        source: odoo18_hult_db_data
+        target: /var/lib/postgresql/data
+
+  odoo:
+    image: odoo:18.0
+    container_name: odoo18_hult
+    depends_on:
+      - db
+    ports:
+      - "10018:8069"
+    volumes:
+      - type: bind
+        source: ./addons
+        target: /mnt/extra-addons
+      - type: bind
+        source: ./etc/odoo18_hult.conf
+        target: /etc/odoo/odoo.conf
+    environment:
+      - HOST=db
+      - USER=odoo
+      - PASSWORD=odoo
+    extra_hosts:
+      - "mail.hultprizeegypt.org:172.17.0.1"
+    restart: unless-stopped
+
+volumes:
+  odoo18_hult_db_data:
